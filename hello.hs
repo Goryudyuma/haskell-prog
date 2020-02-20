@@ -47,3 +47,5 @@ fib' = fastFib 1 1
 
 fastFib _ n2 1 = n2
 fastFib n1 n2 counter = fastFib (n1 + n2) n1 (counter - 1)
+
+myProduct a = foldl (*) 1 a
