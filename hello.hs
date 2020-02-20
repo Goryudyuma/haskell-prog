@@ -10,4 +10,8 @@ calcChange owed given =
   where
     change = given - owed
 
-doubleDouble t = (\x -> x * 2) ( (\x -> x * 2) t)
+doubleDouble t = (\x -> x * 2) ((\x -> x * 2) t)
+
+teams = ["red", "yellow", "orange", "blue", "purple"]
+
+isPalindrome word = word == reverse word
