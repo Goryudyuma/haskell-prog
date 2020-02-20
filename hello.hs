@@ -38,3 +38,12 @@ collatz n =
 
 myReverse [] = []
 myReverse (x:xs) = myReverse xs ++ [x]
+
+fib 0 = 0
+fib 1 = 1
+fib n = fib (n - 1) + fib (n - 2)
+
+fib' = fastFib 1 1
+
+fastFib _ n2 1 = n2
+fastFib n1 n2 counter = fastFib (n1 + n2) n1 (counter - 1)
