@@ -35,3 +35,6 @@ collatz n =
   if even n
     then 1 + collatz (n `div` 2)
     else 1 + collatz (n * 3 + 1)
+
+myReverse [] = []
+myReverse (x:xs) = myReverse xs ++ [x]
