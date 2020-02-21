@@ -9,3 +9,5 @@ drinc aCup ozDrank =
   where
     flOz = getOz aCup
     ozDiff = flOz - ozDrank
+
+isEmpty aCup = getOz aCup == 0
