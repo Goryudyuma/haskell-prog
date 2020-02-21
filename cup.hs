@@ -1,1 +1,1 @@
-cup flOz = \_ -> flOz
+cup flOz = \message -> message flOz
