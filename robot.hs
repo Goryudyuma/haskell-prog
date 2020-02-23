@@ -1,4 +1,4 @@
-robot (name, attack, hp) = \message -> message (name, attack, hp)
+robot (name, attack, hp) message = message (name, attack, hp)
 
 name (n, _, _) = n
 
