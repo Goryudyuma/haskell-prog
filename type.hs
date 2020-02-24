@@ -14,6 +14,14 @@ firstName = fst
 lastName :: PatientName -> String
 lastName = snd
 
+data Sex
+  = Male
+  | Female
+
+sexInitial :: Sex -> Char
+sexInitial Male = 'M'
+sexInitial Female = 'F'
+
 patientInfo :: PatientName -> Age -> Height -> String
 patientInfo patient age height = name ++ " " ++ ageHeight
   where
