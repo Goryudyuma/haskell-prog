@@ -62,3 +62,13 @@ patientInfo patient age height = name ++ " " ++ ageHeight
     ageHeight = "(" ++ show age ++ "yrs. " ++ show height ++ "in.)"
     lname = lastName patient
     fname = firstName patient
+
+type MiddleName = String
+
+data Name
+  = Name FirstName LastName
+  | NameWithMiddle FirstName MiddleName LastName
+
+showName :: Name -> String
+showName (Name f l) = f ++ " " ++ l
+showName (NameWithMiddle f m l) = f ++ " " ++ m ++ " " ++ l
