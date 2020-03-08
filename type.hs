@@ -72,3 +72,8 @@ data Name
 showName :: Name -> String
 showName (Name f l) = f ++ " " ++ l
 showName (NameWithMiddle f m l) = f ++ " " ++ m ++ " " ++ l
+
+data Icecream
+  = Chocolate
+  | Vanilla
+  deriving (Show, Eq, Ord)
