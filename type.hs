@@ -83,3 +83,10 @@ cycleSucc n =
   if n == maxBound
     then minBound
     else succ n
+
+data FourLetterAlphabet
+  = L1
+  | L2
+  | L3
+  | L4
+  deriving (Show, Enum, Bounded)
