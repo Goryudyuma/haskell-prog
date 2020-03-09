@@ -97,3 +97,8 @@ rotN alphabetSize c = toEnum rotation
     halfAlphabet = alphabetSize `div` 2
     offset = fromEnum c + halfAlphabet
     rotation = offset `mod` alphabetSize
+
+rotChar :: Char -> Char
+rotChar charToEncrypt = rotN sizeOfAlphabet charToEncrypt
+  where
+    sizeOfAlphabet = 1 + fromEnum (maxBound :: Char)
